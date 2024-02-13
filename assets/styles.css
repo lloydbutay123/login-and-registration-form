@@ -1,73 +1,69 @@
 @font-face {
-    font-family: poppins-bold ;
-    src: url(./Poppins/Poppins-Bold.ttf);
-}
-@font-face {
-    font-family: poppins-regular;
+    font-family: poppins;
     src: url(./Poppins/Poppins-Regular.ttf);
 }
-
-.login-text {
-
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    font-family: poppins-regular;
+* {
+    font-family: poppins;
     color: white;
 }
-.login-container {
-    height: 90vh;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10%;
-    margin: 0 4rem 0;
-    font-family: poppins-regular;
-    color: white;
 
-}
-.login-container > input {
-    background-color: white;
-    border-radius: 1rem;
-    border: 0;
-}
-.login-text {
-    border-radius: 1rem;
-    margin: 0 10% 0;
-}
-.container {
+body {
     background-image: url(./images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
     background-size: cover;
-    border-radius: 1rem;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-row {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 30px;
+}
+.input-field {
+    padding: 0 2rem 0;
+}
+label {
+    text-transform: uppercase;
+}
+.login-button {
+    width: 150px;
+}
+hr {
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+.main-button > .learn-btn {
+    background-color: orangered;
+    color: white;
+}
+.input-field >  .login-btn  {
+    background-color: orangered;
+    color: white;
+}
+.main-title > a {
+    text-decoration: none;
+}
+.main-button > .learn-btn:hover {
+    background-color: orange;
+}
+
+.input-field > .login-btn:hover {
+    background-color: orange;
+}
+
+
+
+
+@media screen and (maxwidth:768px) {
     
 }
-.form-label {
-display: inline-block;
-justify-content: start;
-align-self: flex-start;
-}
-.login-container > button {
-    border-radius: 1rem;
-}
-.login-text > button {
-    border-radius: 1rem;
-}
-
-@media screen and(max-width: 768px) {
-    .container {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-
